@@ -35,6 +35,7 @@ class Solution:
                 return [num_to_index[complement], i]
             num_to_index[num] = i
         
+        # 問題の制約上ここには到達しません
         return [-1, -1]
 ```
 
@@ -53,6 +54,7 @@ class Solution:
                     continue
                 if num_i + num_j == target:
                     return [i, j]
+        # 問題の制約上ここには到達しません
         return [-1, -1]
 ```
 
@@ -74,6 +76,7 @@ class Solution:
                 right -= 1
             else:
                 left += 1
+        # 問題の制約上ここには到達しません
         return [-1, -1]
 
 ```
@@ -92,6 +95,6 @@ class Solution:
             j = bisect_left(num_and_index, complement, lo=i+1, key=lambda x:x[0])
             if j < len(num_and_index) and num_and_index[j][0] == complement:
                 return [index_i, num_and_index[j][1]]
-
+        # 問題の制約上ここには到達しません
         return [-1, -1]
 ```
