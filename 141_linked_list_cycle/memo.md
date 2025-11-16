@@ -122,7 +122,7 @@ class Solution:
     - >  The is operator compares the identity of two objects; the id() function returns an integer representing its identity.
 - https://github.com/MasukagamiHinata/Arai60/pull/4/files#diff-357653c1cb415a59b70c0ee0b3aba61410e2b967c6cb0312e034d6ba5c90169fR33
   - 時間の見積もり
-  - なるほど、C言語で見積もった後に大体100倍するという方法があるのか（Pythonだと1命令
+  - なるほど、C言語で見積もった後に大体100倍するという方法があるのか（Pythonだと1行百機械語の場合もある）
     - 一旦のC言語でどのくらいの命令があるかをざっくり見積もり（定数倍の見積もり)、C言語でどのくらい実行時間がかかるかを算出
     - ネイティブコードを呼び出す場合はずれそうではある。
     - 参考になりそうなコメント
