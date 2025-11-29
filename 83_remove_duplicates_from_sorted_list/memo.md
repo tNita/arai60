@@ -117,6 +117,20 @@ class Solution:
         return head 
 ```
 
+（追記）上記のコード動かないので修正
+```Python3
+class Solution:
+    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if head is None or head.next is None:
+            return head
+        next_head = self.deleteDuplicates(head.next)
+        if head.val == next_head.val:
+            head.next = next_head.next
+            return head
+        head.next = next_head
+        return head 
+```
+
 ## Step3
 
 ```Python3
