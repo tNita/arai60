@@ -1,0 +1,23 @@
+so=1, other=1,000,000, overlap=1
+intersection(list)      : 4.006 ms
+intersection(set(list)) : 6.634 ms
+convert/list            : 1.656x, winner=list
+set(other)              : 6.767 ms
+
+so=4, other=1,000,000, overlap=1
+intersection(list)      : 6.216 ms
+intersection(set(list)) : 6.986 ms
+convert/list            : 1.124x, winner=list
+set(other)              : 7.037 ms
+
+so=16, other=1,000,000, overlap=1
+intersection(list)      : 8.248 ms
+intersection(set(list)) : 6.789 ms
+convert/list            : 0.823x, winner=convert
+set(other)              : 6.853 ms
+
+so=64, other=1,000,000, overlap=1
+intersection(list)      : 10.133 ms
+intersection(set(list)) : 6.859 ms
+convert/list            : 0.677x, winner=convert
+set(other)              : 6.907 ms
